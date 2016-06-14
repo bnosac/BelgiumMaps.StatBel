@@ -1,0 +1,81 @@
+---
+title: "Administrative boundaries of Belgium"
+author: "Jan Wijffels"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Administrative boundaries of Belgium based on Open Data at Statistics Belgium}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center")
+```
+
+Introduction
+------------
+
+The  **BelgiumMaps.StatBel** package contains maps with administrative boundaries (national, regions, provinces, districts, municipalities, statistical sectors, agglomerations (200m)) of Belgium extracted from Open Data at Statistics Belgium. Data is converted from Lambert CRS into the WGS84 coordinate reference system. 
+
+This data is available in the several objects:
+
+- BE_ADMIN_SECTORS: SpatialPolygonsDataFrame with polygons and data at the level of the statistical sector
+- BE_ADMIN_MUNTY: SpatialPolygonsDataFrame with polygons and data at the level of the municipality
+- BE_ADMIN_DISTRICT: SpatialPolygonsDataFrame with polygons and data at the level of the district
+- BE_ADMIN_PROVINCE: SpatialPolygonsDataFrame with polygons and data at the level of the province
+- BE_ADMIN_REGION: SpatialPolygonsDataFrame with polygons and data at the level of the region
+- BE_ADMIN_BELGIUM: SpatialPolygonsDataFrame with polygons and data at the level of the whole of Belgium
+- BE_ADMIN_HIERARCHY: data.frame with administrative hierarchy of Belgium
+- BE_ADMIN_AGGLOMERATIONS: SpatialPolygonsDataFrame with polygons and data at the level of an agglomeration (200m)
+
+
+
+```{r dataset}
+library(BelgiumMaps.StatBel)
+data(BE_ADMIN_SECTORS)
+class(BE_ADMIN_SECTORS)
+str(BE_ADMIN_SECTORS@data)
+```
+
+Visualisation
+----------------------------
+This core data of the package contains administrative boundaries at the level of the statistical sector which can easily be plotted using the sp or the leaflet package.
+
+```{r basic plots}
+library(sp)
+plot(subset(BE_ADMIN_SECTORS, TX_RGN_DESCR_NL %in% "Brussels Hoofdstedelijk Gewest"),
+     main = "NIS sectors in Brussels")
+```
+
+All municipalities, districts, provinces, regions and country level boundaries are also directly available in the package.
+```{r direct}
+data(BE_ADMIN_MUNTY)
+data(BE_ADMIN_DISTRICT) 
+data(BE_ADMIN_PROVINCE) 
+data(BE_ADMIN_REGION) 
+data(BE_ADMIN_BELGIUM) 
+
+plot(BE_ADMIN_MUNTY, main = "Belgium municipalities")
+plot(subset(BE_ADMIN_MUNTY, TX_RGN_DESCR_NL %in% "Brussels Hoofdstedelijk Gewest"), main = "Municipalities in Brussels")
+plot(BE_ADMIN_DISTRICT, main = "Belgium districts")
+plot(BE_ADMIN_PROVINCE, lwd = 2, add = TRUE)
+```
+
+
+Integrate with BelgiumStatistics
+----------------------------
+The data also contains NIS codes which can be used to link against the data in the BelgiumStatistics package. This package can be found at https://github.com/jwijffels/BelgiumStatistics.
+
+
+OpenStreetMap data about Belgium
+----------------------------
+Next to this data with administrative boundaries, another package called BelgiumMaps.OpenStreetMap is available which contains geospatial data of Belgium regarding landuse, natural, places, points, railways, roads and waterways, extracted from OpenStreetMap. More information: https://github.com/jwijffels/BelgiumMaps.OpenStreetMap
+
+
+Support in geospatial analysis
+----------------------------
+Need support in geospatial analysis or geospatial mapping. 
+Contact BNOSAC: http://www.bnosac.be
