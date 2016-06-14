@@ -1,0 +1,11 @@
+image: docker.io/jangorecki/r-pkg
+test:
+  script:
+    # install R packages
+    - Rscript -e 'install.packages(c("sp", "knitr"))'
+    # build pkg
+    - R CMD build .
+    # run check
+    - PKG_FILE_NAME=$(ls -1t *.tar.gz | head -n 1)
+    - R CMD check "${PKG_FILE_NAME}"  --no-manual --as-cran
+    
