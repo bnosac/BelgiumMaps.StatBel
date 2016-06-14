@@ -1,0 +1,10 @@
+The R package and documentation itself is copyrighted by BNOSAC and the R package maintainer Jan Wijffels
+
+  (C) BNOSAC (www.bnosac.be/contact) 
+  
+Contains data of administrative identifiers and shapefiles provided by the Directie Statistiek - Statistics Belgium. 
+See how enrichment is done in inst/dev/01_import.R
+
+  (C) Algemene Directie Statistiek - Statistics Belgium, released under Licentie open data Algemene Directie Statistiek (see file LICENCE)
+
+
