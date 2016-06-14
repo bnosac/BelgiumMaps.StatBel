@@ -16,6 +16,15 @@ This data is available in several objects:
     
 ## Installation
 
+The package is available at datatailor.be
+
+```
+install.packages("BelgiumMaps.StatBel", repos = "http://www.datatailor.be/rcube", type = "source")
+vignette("BelgiumMaps_AdministrativeAreas_StatBel", package = "BelgiumMaps.StatBel")
+```
+
+To install the latest version from the repository itself:
+
 ```
 install.packages(c('sp', 'knitr', 'markdown'))
 devtools::install_git("http://bnosac.all2all.org:10080/gitlab/open-source/BelgiumMaps.StatBel.git", build_vignettes = TRUE)
