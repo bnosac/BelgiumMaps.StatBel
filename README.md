@@ -17,6 +17,7 @@ This data is available in several objects:
 ## Installation
 
 ```
+install.packages(c('sp', 'knitr', 'markdown'))
 devtools::install_git("http://bnosac.all2all.org:10080/gitlab/open-source/BelgiumMaps.StatBel.git", build_vignettes = TRUE)
 ## See the vignette
 vignette("BelgiumMaps_AdministrativeAreas_StatBel.Rmd", package = "BelgiumMaps.StatBel")

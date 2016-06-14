@@ -21,11 +21,9 @@ taxes <- taxes[, c("CD_YEAR", "CD_REFNIS_SECTOR",
 data(BE_ADMIN_SECTORS, package = "BelgiumMaps.StatBel")
 data(BE_ADMIN_DISTRICT, package = "BelgiumMaps.StatBel")
 data(BE_ADMIN_MUNTY, package = "BelgiumMaps.StatBel")
-
 mymap <- merge(BE_ADMIN_SECTORS, taxes, by = "CD_REFNIS_SECTOR", all.x=TRUE, all.y=FALSE)
 
-## Map the data
-mymap <- subset(mymap, TX_RGN_DESCR_NL %in% "Brussels Hoofdstedelijk Gewest")
+## Visualise the data
 pal <- colorBin(palette = rev(heat.colors(11)), domain = mymap$MS_AVG_TOT_NET_TAXABLE_INC, 
                 bins = c(0, round(quantile(mymap$MS_AVG_TOT_NET_TAXABLE_INC, na.rm=TRUE, probs = seq(0.1, 0.9, by = 0.1)), 0), +Inf),
                 na.color = "#cecece")
@@ -41,7 +39,8 @@ m <- leaflet(mymap) %>%
 m <- addPolylines(m, data = BE_ADMIN_DISTRICT, weight = 1.5, color = "black")
 m
 
+## Save as HTML
 library(htmlwidgets)
 m$sizingPolicy$defaultHeight <- "100%"
 m$sizingPolicy$defaultWidth <- "100%"
-saveWidget(m, file="be_net_taxable_income_sector.html")
+saveWidget(m, file="be_net_taxable_income_sector.html", selfcontained = FALSE)
