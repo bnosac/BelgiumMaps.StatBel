@@ -22,6 +22,7 @@ data(BE_ADMIN_SECTORS, package = "BelgiumMaps.StatBel")
 data(BE_ADMIN_DISTRICT, package = "BelgiumMaps.StatBel")
 data(BE_ADMIN_MUNTY, package = "BelgiumMaps.StatBel")
 mymap <- merge(BE_ADMIN_SECTORS, taxes, by = "CD_REFNIS_SECTOR", all.x=TRUE, all.y=FALSE)
+#mymap <- subset(mymap, TX_RGN_DESCR_NL %in% "Brussels Hoofdstedelijk Gewest")
 
 ## Visualise the data
 pal <- colorBin(palette = rev(heat.colors(11)), domain = mymap$MS_AVG_TOT_NET_TAXABLE_INC, 
