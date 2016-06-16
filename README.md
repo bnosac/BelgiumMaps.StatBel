@@ -13,7 +13,9 @@ This data is available in several objects:
 - BE_ADMIN_HIERARCHY: data.frame with administrative hierarchy of Belgium
 - BE_ADMIN_AGGLOMERATIONS: SpatialPolygonsDataFrame with polygons and data at the level of an agglomeration (200m)
 
-    
+![](inst/img/belgiummaps_statbel.png)
+
+
 ## Installation
 
 The package is available at datatailor.be

@@ -62,7 +62,8 @@ colnames(BE_ADMIN_SECTORS@data) <- tolower(make.names(colnames(BE_ADMIN_SECTORS@
 
 isutf8 <- function(x){
   for(column in colnames(x)){
-    if(is.character(x[[column]])){
+    if(is.character(x[[column]]) | is.factor(x[[column]])){
+      x[[column]] <- as.character(x[[column]])
       Encoding(x[[column]]) <- "UTF-8"
     }
   }
