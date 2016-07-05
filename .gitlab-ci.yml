@@ -1,7 +1,6 @@
 image: docker.io/jangorecki/r-pkg
 test:
   script:
-    - export
     # install R packages
     - Rscript -e 'install.packages(c("sp", "knitr"))'
     # build pkg
