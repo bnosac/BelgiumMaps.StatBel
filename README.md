@@ -25,6 +25,7 @@ install.packages("BelgiumMaps.StatBel", repos = "http://www.datatailor.be/rcube"
 vignette("BelgiumMaps_AdministrativeAreas_StatBel", package = "BelgiumMaps.StatBel")
 ```
 
+The package is developed at http://bnosac.all2all.org:10080/gitlab/open-source/BelgiumMaps.StatBel.git
 To install the latest version from the repository itself:
 
 ```
