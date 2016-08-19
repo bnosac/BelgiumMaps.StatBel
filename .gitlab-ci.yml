@@ -10,4 +10,4 @@ test:
     - R CMD check "${PKG_FILE_NAME}"  --no-manual --as-cran
   artifacts:
     paths:
-    - PKG_FILE_NAME
+    - *.tar.gz
