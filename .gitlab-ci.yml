@@ -8,6 +8,7 @@ test:
     # run check
     - PKG_FILE_NAME=$(ls -1t *.tar.gz | head -n 1)
     - R CMD check "${PKG_FILE_NAME}"  --no-manual --as-cran
+    - Rscript -e 'print(list.files())'
   artifacts:
     paths:
     - *.tar.gz
