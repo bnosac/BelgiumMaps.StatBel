@@ -10,5 +10,5 @@
 #' str(BE_ADMIN_SECTORS@data)
 #' 
 #' library(sp)
-#' plot(BE_ADMIN_SECTORS)
+#' plot(BE_ADMIN_SECTORS, main = "Belgium sectors")
 NULL
