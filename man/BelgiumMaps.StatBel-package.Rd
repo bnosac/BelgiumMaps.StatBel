@@ -14,6 +14,8 @@ data(BE_ADMIN_SECTORS)
 str(BE_ADMIN_SECTORS@data)
 
 library(sp)
-plot(BE_ADMIN_SECTORS)
+plot(BE_ADMIN_SECTORS, main = "Belgium sectors")
+
+plot(head(BE_ADMIN_SECTORS), main = "Belgium sectors")
 }
 

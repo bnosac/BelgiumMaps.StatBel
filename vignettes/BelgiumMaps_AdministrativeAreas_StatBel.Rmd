@@ -67,12 +67,12 @@ plot(BE_ADMIN_PROVINCE, lwd = 2, add = TRUE)
 
 Integrate with BelgiumStatistics
 ----------------------------
-The data also contains NIS codes which can be used to link against the data in the BelgiumStatistics package. This package can be found at https://github.com/jwijffels/BelgiumStatistics.
+The data also contains NIS codes which can be used to link against the data in the BelgiumStatistics package. This package can be found at https://github.com/weRbelgium/BelgiumStatistics.
 
 
 OpenStreetMap data about Belgium
 ----------------------------
-Next to this data with administrative boundaries, another package called BelgiumMaps.OpenStreetMap is available which contains geospatial data of Belgium regarding landuse, natural, places, points, railways, roads and waterways, extracted from OpenStreetMap. More information: https://github.com/jwijffels/BelgiumMaps.OpenStreetMap
+Next to this data with administrative boundaries, another package called BelgiumMaps.OpenStreetMap is available which contains geospatial data of Belgium regarding landuse, natural, places, points, railways, roads and waterways, extracted from OpenStreetMap. More information: https://github.com/weRbelgium/BelgiumMaps.OpenStreetMap
 
 
 Support in geospatial analysis

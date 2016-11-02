@@ -22,7 +22,7 @@ data(BE_ADMIN_SECTORS, package = "BelgiumMaps.StatBel")
 data(BE_ADMIN_DISTRICT, package = "BelgiumMaps.StatBel")
 data(BE_ADMIN_MUNTY, package = "BelgiumMaps.StatBel")
 mymap <- merge(BE_ADMIN_SECTORS, taxes, by = "CD_REFNIS_SECTOR", all.x=TRUE, all.y=FALSE)
-#mymap <- subset(mymap, TX_RGN_DESCR_NL %in% "Brussels Hoofdstedelijk Gewest")
+mymap <- subset(mymap, TX_RGN_DESCR_NL %in% "Brussels Hoofdstedelijk Gewest")
 
 ## Visualise the data
 pal <- colorBin(palette = rev(heat.colors(11)), domain = mymap$MS_AVG_TOT_NET_TAXABLE_INC, 
@@ -37,7 +37,8 @@ m <- leaflet(mymap) %>%
                               mymap$TX_SECTOR_DESCR_FR, mymap$TX_MUNTY_DESCR_FR,  
                               mymap$MS_AVG_TOT_NET_TAXABLE_INC, mymap$MS_MEDIAN_NET_TAXABLE_INC, 
                               mymap$MS_NBR_NON_ZERO_INC))
-m <- addPolylines(m, data = BE_ADMIN_DISTRICT, weight = 1.5, color = "black")
+#m <- addPolylines(m, data = BE_ADMIN_DISTRICT, weight = 1.5, color = "black")
+m <- addPolylines(m, data = subset(BE_ADMIN_MUNTY, TX_RGN_DESCR_NL %in% "Brussels Hoofdstedelijk Gewest"), weight = 1.5, color = "black")
 m
 
 ## Save as HTML
