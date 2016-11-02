@@ -1,8 +1,8 @@
 
 #' @name BE_ADMIN
 #' @aliases BE_ADMIN_SECTORS BE_ADMIN_MUNTY BE_ADMIN_DISTRICT BE_ADMIN_PROVINCE BE_ADMIN_REGION BE_ADMIN_BELGIUM
-#' @title BE_ADMIN_SECTORS: Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium.
-#' @description BE_ADMIN_SECTORS: Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium. Namely:
+#' @title Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium.
+#' @description Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium. Namely:
 #' 
 #' \itemize{
 #' \item BE_ADMIN_SECTORS: SpatialPolygonsDataFrame with polygons and data at the level of the statistical sector
@@ -87,8 +87,8 @@ NULL
 
 
 #' @name BE_ADMIN_HIERARCHY
-#' @title BE_ADMIN_HIERARCHY: Definitions of sectors/municipalities/districts/provinces/regions in Belgium.
-#' @description BE_ADMIN_HIERARCHY: Definitions of sectors/municipalities/districts/provinces/regions in Belgium.
+#' @title Definitions of sectors/municipalities/districts/provinces/regions in Belgium.
+#' @description Definitions of sectors/municipalities/districts/provinces/regions in Belgium.
 #' @docType data
 #' @source \url{http://statbel.fgov.be/nl/binaries/TF_PSNL_INC_TAX_SECTOR_tcm325-278417.zip}
 #' @references \url{http://statbel.fgov.be/nl/statistieken/opendata/datasets/werk}
@@ -100,8 +100,8 @@ NULL
 
 
 #' @name BE_ADMIN_AGGLOMERATIONS
-#' @title BE_ADMIN_AGGLOMERATIONS: Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium
-#' @description BE_ADMIN_AGGLOMERATIONS: Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium.
+#' @title Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium
+#' @description Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium.
 #' Agglomerations (200m) are groups of buildings of which none of them are more than 200m away from the closest neighbouring building.
 #' @docType data
 #' @source \url{http://statbel.fgov.be/nl/binaries/SH_CENSUS_2011_AGGLOMERATIONS_200M.shp_tcm325-276234.zip}

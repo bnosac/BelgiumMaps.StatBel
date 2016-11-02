@@ -3,12 +3,12 @@
 \docType{data}
 \name{BE_ADMIN_HIERARCHY}
 \alias{BE_ADMIN_HIERARCHY}
-\title{BE_ADMIN_HIERARCHY: Definitions of sectors/municipalities/districts/provinces/regions in Belgium.}
+\title{Definitions of sectors/municipalities/districts/provinces/regions in Belgium.}
 \source{
 \url{http://statbel.fgov.be/nl/binaries/TF_PSNL_INC_TAX_SECTOR_tcm325-278417.zip}
 }
 \description{
-BE_ADMIN_HIERARCHY: Definitions of sectors/municipalities/districts/provinces/regions in Belgium.
+Definitions of sectors/municipalities/districts/provinces/regions in Belgium.
 }
 \examples{
 data(BE_ADMIN_HIERARCHY)

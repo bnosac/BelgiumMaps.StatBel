@@ -9,12 +9,12 @@
 \alias{BE_ADMIN_PROVINCE}
 \alias{BE_ADMIN_REGION}
 \alias{BE_ADMIN_SECTORS}
-\title{BE_ADMIN_SECTORS: Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium.}
+\title{Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium.}
 \source{
 \url{http://statbel.fgov.be/nl/binaries/scbel01012011_gen13_tcm325-275679.zip}
 }
 \description{
-BE_ADMIN_SECTORS: Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium. Namely:
+Maps with administrative boundaries of Belgium extracted from Open Data at Statistics Belgium. Namely:
 
 \itemize{
 \item BE_ADMIN_SECTORS: SpatialPolygonsDataFrame with polygons and data at the level of the statistical sector

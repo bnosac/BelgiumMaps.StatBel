@@ -11,7 +11,7 @@ Maintainer: Jan Wijffels <jwijffels@bnosac.be>
 Author: c(person("Jan", "Wijffels", role = c("aut", "cre", "cph"), email =
     "jwijffels@bnosac.be"), person("BNOSAC", role = "cph"), person("Statistics
     Belgium", role = "cph", email = "statbel.opendata@economie.fgov.be"))
-License: see file LICENCE
+License: CC-BY 2.0
 Copyright: see file COPYRIGHTS
 Version: 1.0
 URL: http://www.bnosac.be

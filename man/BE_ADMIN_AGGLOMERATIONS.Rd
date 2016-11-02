@@ -3,12 +3,12 @@
 \docType{data}
 \name{BE_ADMIN_AGGLOMERATIONS}
 \alias{BE_ADMIN_AGGLOMERATIONS}
-\title{BE_ADMIN_AGGLOMERATIONS: Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium}
+\title{Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium}
 \source{
 \url{http://statbel.fgov.be/nl/binaries/SH_CENSUS_2011_AGGLOMERATIONS_200M.shp_tcm325-276234.zip}
 }
 \description{
-BE_ADMIN_AGGLOMERATIONS: Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium.
+Maps with administrative boundaries of agglomerations (200m) of Belgium extracted from Open Data at Statistics Belgium.
 Agglomerations (200m) are groups of buildings of which none of them are more than 200m away from the closest neighbouring building.
 }
 \examples{

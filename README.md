@@ -1,6 +1,6 @@
 # Administrative boundaries of Belgium based on Open Data available at Statistics Belgium
 
-The  **BelgiumMaps.StatBel** package contains maps with administrative boundaries (national, regions, provinces, districts, municipalities, statistical sectors, agglomerations (200m)) of Belgium extracted from Open Data at Statistics Belgium. Data is converted from Lambert CRS into the WGS84 coordinate reference system. 
+The  **BelgiumMaps.StatBel** package contains maps with administrative boundaries (national, regions, provinces, districts, municipalities, statistical sectors, agglomerations (200m)) of Belgium extracted from Open Data at Statistics Belgium (http://statbel.fgov.be/en/statistics/opendata). Data is converted from Lambert CRS into the WGS84 coordinate reference system. 
 
 This data is available in several objects:
 
