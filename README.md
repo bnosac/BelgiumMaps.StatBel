@@ -35,6 +35,11 @@ devtools::install_git("http://bnosac.all2all.org:10080/gitlab/open-source/Belgiu
 vignette("BelgiumMaps_AdministrativeAreas_StatBel", package = "BelgiumMaps.StatBel")
 ```
 
+## License
+
+The package is available under the CC BY 2.0 license. More info: https://creativecommons.org/licenses/by/2.0. This license is compatible with the LICENCE file given by Statistics Belgium. More info at inst/extdata/LICENCE and inst/COPYRIGHTS.
+
+
 ## Support in geospatial analysis
 
 Need support in geospatial analysis or geospatial mapping. 
