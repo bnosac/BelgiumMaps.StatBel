@@ -21,6 +21,7 @@ This data is available in several objects:
 The package is available at datatailor.be
 
 ```
+install.packages("sp")
 install.packages("BelgiumMaps.StatBel", repos = "http://www.datatailor.be/rcube", type = "source")
 vignette("BelgiumMaps_AdministrativeAreas_StatBel", package = "BelgiumMaps.StatBel")
 ```
