@@ -5,15 +5,18 @@ library(tmap)
 library(utils)
 library(data.table)
 library(maptools)
+library(tools)
 
 settings <- list()
 settings$hierarchy <- list()
 settings$hierarchy$municipalities <- file.path(getwd(), "inst", "extdata", "TF_PSNL_INC_TAX_MUNTY_tcm325-272513.zip")
 settings$hierarchy$nis.sectors <- file.path(getwd(), "inst", "extdata", "TF_PSNL_INC_TAX_SECTOR_tcm325-278417.zip")
+settings$nis.sectors <- file.path(getwd(), "inst", "extdata", "scbel01012011_gen13_tcm325-275679.zip")
+settings$agglomeraties <- file.path(getwd(), "inst", "extdata", "SH_CENSUS_2011_AGGLOMERATIONS_200M.shp_tcm325-276234.zip")
+unzip(settings$nis.sectors, list = FALSE, exdir = file_path_sans_ext(settings$nis.sectors))
+unzip(settings$agglomeraties, list = FALSE, exdir = file_path_sans_ext(settings$agglomeraties))
 settings$nis.sectors <- file.path(getwd(), "inst", "extdata", "scbel01012011_gen13_tcm325-275679", "scbel01012011_gen13.shp")
 settings$agglomeraties <- file.path(getwd(), "inst", "extdata", "SH_CENSUS_2011_AGGLOMERATIONS_200M.shp_tcm325-276234", "SH_CENSUS_2011_AGGLOMERATIONS_200M.shp")
-
-
 
 ##
 ## Import NIS hierarchy
