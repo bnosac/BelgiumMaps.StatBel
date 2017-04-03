@@ -14,3 +14,6 @@
 #' 
 #' plot(head(BE_ADMIN_SECTORS), main = "Belgium sectors")
 NULL
+
+
+# TEST
