@@ -21,5 +21,6 @@ Depends:
     R (>= 2.10)
 Suggests:
     sp,
-    knitr
+    knitr,
+    rmarkdown
 RoxygenNote: 5.0.1
